@@ -174,6 +174,9 @@
       case "I": // hour as a decimal number using a 12-hour clock (range 01 to 12)
           var hours = (dateObject.getHours() % 12 || 12);
           return ((hours < 10) ? "0" : "") + hours;
+      case "i": // hour as a decimal number using a 12-hour clock (range 1 to 12)
+          var hours = (dateObject.getHours() % 12 || 12);
+          return hours;
       case "m": // month number
           return ((dateObject.getMonth() < 10) ? "0" : "") + (dateObject.getMonth() + 1);
       case "M": // minute as a decimal number
